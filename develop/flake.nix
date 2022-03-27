@@ -11,6 +11,7 @@
   inputs.src-nicoru-develop.ref   = "refs/heads/develop";
   inputs.src-nicoru-develop.owner = "fox0430";
   inputs.src-nicoru-develop.repo  = "nicoru";
+  inputs.src-nicoru-develop.dir   = "";
   inputs.src-nicoru-develop.type  = "github";
   
   inputs."seccomp".owner = "nim-nix-pkgs";

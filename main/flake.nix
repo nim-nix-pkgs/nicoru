@@ -11,6 +11,7 @@
   inputs.src-nicoru-main.ref   = "refs/heads/main";
   inputs.src-nicoru-main.owner = "fox0430";
   inputs.src-nicoru-main.repo  = "nicoru";
+  inputs.src-nicoru-main.dir   = "";
   inputs.src-nicoru-main.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
