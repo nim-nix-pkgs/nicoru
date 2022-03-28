@@ -11,8 +11,15 @@
   inputs.src-nicoru-main.ref   = "refs/heads/main";
   inputs.src-nicoru-main.owner = "fox0430";
   inputs.src-nicoru-main.repo  = "nicoru";
-  inputs.src-nicoru-main.dir   = "";
   inputs.src-nicoru-main.type  = "github";
+  
+  inputs."syscall".owner = "nim-nix-pkgs";
+  inputs."syscall".ref   = "master";
+  inputs."syscall".repo  = "syscall";
+  inputs."syscall".dir   = "master";
+  inputs."syscall".type  = "github";
+  inputs."syscall".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."syscall".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
