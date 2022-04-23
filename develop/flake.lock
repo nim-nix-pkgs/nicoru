@@ -37,7 +37,8 @@
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
         "seccomp": "seccomp",
-        "src-nicoru-develop": "src-nicoru-develop"
+        "src-nicoru-develop": "src-nicoru-develop",
+        "syscall": "syscall"
       }
     },
     "seccomp": {
@@ -52,11 +53,11 @@
       },
       "locked": {
         "dir": "0_2_1",
-        "lastModified": 1648163563,
-        "narHash": "sha256-JQgiU7MzNmlVwD9Dl2nR6DRqRDEHubr1Hig6JgadMVU=",
+        "lastModified": 1650750570,
+        "narHash": "sha256-YzopitzwrnlMqRD7AFcIz+U4U6Z0zT6CBUxIaF2A448=",
         "owner": "nim-nix-pkgs",
         "repo": "seccomp",
-        "rev": "b94abdf70cbbb2837ae08be92f289df6e40969fe",
+        "rev": "f206d410844b905bf8878e58fb356eb6bfd228f2",
         "type": "github"
       },
       "original": {
@@ -98,6 +99,50 @@
         "owner": "FedericoCeratto",
         "ref": "refs/tags/0.2.1",
         "repo": "nim-seccomp",
+        "type": "github"
+      }
+    },
+    "src-syscall-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1465347193,
+        "narHash": "sha256-qxJXoRxk2sxqVvfCezu0r1paIRywXk9IRoNnrkI4e8c=",
+        "owner": "def-",
+        "repo": "nim-syscall",
+        "rev": "09c647b0c5798e8d3348f0ed90dbb5704d5e8159",
+        "type": "github"
+      },
+      "original": {
+        "owner": "def-",
+        "ref": "refs/heads/master",
+        "repo": "nim-syscall",
+        "type": "github"
+      }
+    },
+    "syscall": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-syscall-master": "src-syscall-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650750623,
+        "narHash": "sha256-2H54ZJsb/L+lHMZS8bd4EwWIKM+vRhlwyo1CafCGl/Q=",
+        "owner": "nim-nix-pkgs",
+        "repo": "syscall",
+        "rev": "d7516fc3b503ac1c048d5f8376f1278fec58294b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "syscall",
         "type": "github"
       }
     }
